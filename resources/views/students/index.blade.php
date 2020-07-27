@@ -20,7 +20,7 @@
                                             <td scope="col" class="align-middle">{{ $student->id }}</td>
                                             <td class="align-middle text-center">
                                                 @if ($student->avatar)
-                                                    <img src="{{ url("storage/{$student->avatar}") }}" alt="{{ $student->name }}" class="img-fluid rounded-circle thumbnail-photo-list" />
+                                                <img src="/storage/{{$student->avatar}}" alt="{{ $student->name }}" class="img-fluid rounded-circle thumbnail-photo-list" />
                                                 @else
                                                     @if ($student->gender == 'Masculino')
                                                         <i class="fas fa-male text-info" style="font-size:3em;"></i>
