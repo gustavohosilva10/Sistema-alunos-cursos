@@ -17,10 +17,10 @@
                         <table class="table table-striped table-borderless table-hover mt-0 mb-0">
                             <tbody>
                                 @foreach ($student as $student)
-                                <td scope="col" class="align-middle">{{ $student->id }}</td>
+                                <td scope="col" class="align-middle"> Matricula {{ $student->id }}</td>
                                 <td class="align-middle text-center">
                                     @if ($student->avatar)
-                                    <img src="/storage/{{$student->avatar}}" alt="{{ $student->name }}"
+                                    <img src="{{ url("storage/student->avatar}") }}" alt="{{ $student->name }}"
                                         class="img-fluid rounded-circle thumbnail-photo-list" />
                                     @else
                                     @if ($student->gender == 'Masculino')
@@ -34,7 +34,7 @@
                                 </td>
 
                                 <td class="align-middle">
-                                    <h6>Status: {{$student->status}} Curso : {{$course->course}}</h6>
+                                    <h6>Status: {{$student->status}} </h6>
                                     <a href="/students/show{{$student->id}}" data-toggle="tooltip"
                                         data-placement="bottom" title="Ver contato">
                                         <i class="fas fa-caret-square-right text-success" style="font-size:1.5em"></i>
