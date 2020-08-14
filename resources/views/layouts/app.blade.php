@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title')</title>
+    <title></title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.min.css') }}" rel="stylesheet">
@@ -48,10 +48,10 @@
                                 Menu
                             </a>
                             <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="">Contatos</a>
-                                <a class="dropdown-item" href="">Adicionar contato</a>
-                                <a class="dropdown-item" href="">Contrato</a>
-                                <a class="dropdown-item" href="">Landing Page</a>
+                                <a class="dropdown-item" href="/students/index">Alunos</a>
+                                <a class="dropdown-item" href="/students/new">Adicionar aluno</a>
+                                <a class="dropdown-item" href="/course/index">Cursos</a>
+                                <a class="dropdown-item" href="/course/new">Adicionar curso</a>
                             </div>
                         </li>
 

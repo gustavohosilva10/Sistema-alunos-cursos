@@ -14,13 +14,14 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 {!! Form::model($student, [
-                'method' => 'put',
-                'url' => '/students/edit'
-                'files' => true,
-                'class' => 'form-horizontal',
-                'id' => 'needs-validation',
-                'novalidate' => ''
-            ]) !!}
+'method' => 'put',
+'url' => '/students/edit'
+'files' => true,
+'class' => 'form-horizontal',
+'id' => 'needs-validation',
+'novalidate' => ''
+]) !!}
+
 <body>
     <div class="container">
         <div class="row justify-content-center">
